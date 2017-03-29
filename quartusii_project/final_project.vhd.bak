@@ -1,0 +1,6 @@
+use library ieee
+
+
+
+entity final_project is
+end final_project;

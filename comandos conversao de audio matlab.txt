@@ -1,0 +1,28 @@
+Comandos para conversão da faixa de audio para csv
+
+
+//parametros: nome do audio,  tipo do dado
+>> [y, fs] = audioread('crash-acoustic.wav','double');
+
+//conversao para uint8 - valores de 0 a 256
+>> x = uint8((y*128)+128);
+
+//play- parametros: tipo do dado(dado), frequencia da amostra
+>> soundsc(double(x),fs);
+
+//escreve o audio para texto - parametros: nome do arquivo.tipo, variavel
+>> csvwrite('crash-acoustic.csv',x);
+
+//---------------------------------------------------------------------
+//outros comandos
+
+//valor minimo
+>>min(x)
+
+//valor maximo
+>>max(x)
+
+//mostra os graficos
+>>plot(x)
+>>figure
+>>plot(y)

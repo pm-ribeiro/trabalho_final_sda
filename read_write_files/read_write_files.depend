@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1489086168 source:d:\biblioteca\documentos\0_sda\read_write_files\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1489099895 source:d:\biblioteca\documentos\0_sda\tranalho_final_drum\read_write_files\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

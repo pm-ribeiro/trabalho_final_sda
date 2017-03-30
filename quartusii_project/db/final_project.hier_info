@@ -1,5 +1,15 @@
 |final_project
-clock => ~NO_FANOUT~
+clock => ram_1_read:ram_1.clock
+clock => d[0].CLK
+clock => d[1].CLK
+clock => d[2].CLK
+clock => d[3].CLK
+clock => d[4].CLK
+clock => d[5].CLK
+clock => d[6].CLK
+clock => d[7].CLK
+clock => ram_2_write:ram_2.clock
+clock => registrador:reg.clk
 address[0] => ~NO_FANOUT~
 address[1] => ~NO_FANOUT~
 address[2] => ~NO_FANOUT~
@@ -20,14 +30,14 @@ data[5] => ~NO_FANOUT~
 data[6] => ~NO_FANOUT~
 data[7] => ~NO_FANOUT~
 wren => ~NO_FANOUT~
-q[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
-q[1] <= q[1].DB_MAX_OUTPUT_PORT_TYPE
-q[2] <= q[2].DB_MAX_OUTPUT_PORT_TYPE
-q[3] <= q[3].DB_MAX_OUTPUT_PORT_TYPE
-q[4] <= q[4].DB_MAX_OUTPUT_PORT_TYPE
-q[5] <= q[5].DB_MAX_OUTPUT_PORT_TYPE
-q[6] <= q[6].DB_MAX_OUTPUT_PORT_TYPE
-q[7] <= q[7].DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= <GND>
+q[1] <= <GND>
+q[2] <= <GND>
+q[3] <= <GND>
+q[4] <= <GND>
+q[5] <= <GND>
+q[6] <= <GND>
+q[7] <= <GND>
 
 
 |final_project|ram_1_read:ram_1
@@ -1210,5 +1220,50 @@ ENA => WORD_SR.OUTPUTSELECT
 ENA => WORD_SR.OUTPUTSELECT
 TDI => WORD_SR.DATAA
 TDO <= WORD_SR[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project|registrador:reg
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+enable => q[7]~reg0.ENA
+enable => q[6]~reg0.ENA
+enable => q[5]~reg0.ENA
+enable => q[4]~reg0.ENA
+enable => q[3]~reg0.ENA
+enable => q[2]~reg0.ENA
+enable => q[1]~reg0.ENA
+enable => q[0]~reg0.ENA
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[6]~reg0.ACLR
+reset => q[7]~reg0.ACLR
+reset => q[7].IN0
+set => q[7].IN1
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+d[4] => q[4]~reg0.DATAIN
+d[5] => q[5]~reg0.DATAIN
+d[6] => q[6]~reg0.DATAIN
+d[7] => q[7]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for final_project
-Wed Mar 29 10:08:04 2017
+Wed Mar 29 23:03:48 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -25,11 +25,12 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  17. Parameter Settings for User Entity Instance: ram_1_read:ram_1|altsyncram:altsyncram_component
  18. Parameter Settings for User Entity Instance: ram_2_write:ram_2|altsyncram:altsyncram_component
  19. altsyncram Parameter Settings by Entity Instance
- 20. Port Connectivity Checks: "ram_2_write:ram_2"
- 21. Port Connectivity Checks: "ram_1_read:ram_1"
- 22. In-System Memory Content Editor Settings
- 23. Elapsed Time Per Partition
- 24. Analysis & Synthesis Messages
+ 20. Port Connectivity Checks: "registrador:reg"
+ 21. Port Connectivity Checks: "ram_2_write:ram_2"
+ 22. Port Connectivity Checks: "ram_1_read:ram_1"
+ 23. In-System Memory Content Editor Settings
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
 
 
 
@@ -55,13 +56,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Mar 29 10:08:04 2017           ;
+; Analysis & Synthesis Status        ; Successful - Wed Mar 29 23:03:48 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; final_project                                   ;
 ; Top-level Entity Name              ; final_project                                   ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 316                                             ;
-;     Total combinational functions  ; 292                                             ;
+; Total logic elements               ; 314                                             ;
+;     Total combinational functions  ; 290                                             ;
 ;     Dedicated logic registers      ; 171                                             ;
 ; Total registers                    ; 171                                             ;
 ; Total pins                         ; 29                                              ;
@@ -176,6 +177,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; final_project.vhd                ; yes             ; User VHDL File                         ; D:/Biblioteca/Documentos/GitHub/trabalho_final_sda/quartusii_project/final_project.vhd      ;         ;
 ; ram_1_read.vhd                   ; yes             ; User Wizard-Generated File             ; D:/Biblioteca/Documentos/GitHub/trabalho_final_sda/quartusii_project/ram_1_read.vhd         ;         ;
 ; ram_2_write.vhd                  ; yes             ; User Wizard-Generated File             ; D:/Biblioteca/Documentos/GitHub/trabalho_final_sda/quartusii_project/ram_2_write.vhd        ;         ;
+; registrador.vhd                  ; yes             ; User VHDL File                         ; D:/Biblioteca/Documentos/GitHub/trabalho_final_sda/quartusii_project/registrador.vhd        ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                            ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                     ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                               ;         ;
@@ -202,16 +204,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 316                      ;
+; Estimated Total logic elements              ; 314                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 292                      ;
+; Total combinational functions               ; 290                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
 ;     -- 4 input functions                    ; 145                      ;
-;     -- 3 input functions                    ; 65                       ;
+;     -- 3 input functions                    ; 63                       ;
 ;     -- <=2 input functions                  ; 82                       ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 256                      ;
+;     -- normal mode                          ; 254                      ;
 ;     -- arithmetic mode                      ; 36                       ;
 ;                                             ;                          ;
 ; Total registers                             ; 171                      ;
@@ -223,8 +225,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0                        ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 215                      ;
-; Total fan-out                               ; 1803                     ;
-; Average fan-out                             ; 3.51                     ;
+; Total fan-out                               ; 1813                     ;
+; Average fan-out                             ; 3.55                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -233,7 +235,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                          ; Library Name ;
 +---------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |final_project                                                      ; 292 (1)           ; 171 (0)      ; 32768       ; 0            ; 0       ; 0         ; 29   ; 0            ; |final_project                                                                                                                                                               ; work         ;
+; |final_project                                                      ; 290 (1)           ; 171 (0)      ; 32768       ; 0            ; 0       ; 0         ; 29   ; 0            ; |final_project                                                                                                                                                               ; work         ;
 ;    |ram_1_read:ram_1|                                               ; 66 (0)            ; 37 (0)       ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|ram_1_read:ram_1                                                                                                                                              ; work         ;
 ;       |altsyncram:altsyncram_component|                             ; 66 (0)            ; 37 (0)       ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|ram_1_read:ram_1|altsyncram:altsyncram_component                                                                                                              ; work         ;
 ;          |altsyncram_03f1:auto_generated|                           ; 66 (0)            ; 37 (0)       ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|ram_1_read:ram_1|altsyncram:altsyncram_component|altsyncram_03f1:auto_generated                                                                               ; work         ;
@@ -246,8 +248,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |altsyncram_jc82:altsyncram1|                           ; 0 (0)             ; 0 (0)        ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|altsyncram_jc82:altsyncram1                                                  ; work         ;
 ;             |sld_mod_ram_rom:mgl_prim2|                             ; 65 (40)           ; 37 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|sld_mod_ram_rom:mgl_prim2                                                    ; work         ;
 ;                |sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr| ; 25 (25)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr ; work         ;
-;    |sld_hub:auto_hub|                                               ; 160 (1)           ; 97 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|sld_hub:auto_hub                                                                                                                                              ; work         ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                ; 159 (121)         ; 97 (69)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                 ; work         ;
+;    |sld_hub:auto_hub|                                               ; 158 (1)           ; 97 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|sld_hub:auto_hub                                                                                                                                              ; work         ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                ; 157 (119)         ; 97 (69)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                                 ; work         ;
 ;          |sld_rom_sr:hub_info_reg|                                  ; 21 (21)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                         ; work         ;
 ;          |sld_shadow_jsm:shadow_jsm|                                ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                       ; work         ;
 +---------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
@@ -327,16 +329,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |final_project|ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3] ;
 ; 24:1               ; 4 bits    ; 64 LEs        ; 44 LEs               ; 20 LEs                 ; Yes        ; |final_project|ram_1_read:ram_1|altsyncram:altsyncram_component|altsyncram_03f1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]       ;
 ; 24:1               ; 4 bits    ; 64 LEs        ; 44 LEs               ; 20 LEs                 ; Yes        ; |final_project|ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg[1]                                                                                            ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[0]                                                                                               ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][0]                                                                                                   ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]                                                                                                   ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[4]                                                                         ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][1]                                                                                            ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][3]                                                                                            ;
-; 8:1                ; 5 bits    ; 25 LEs        ; 10 LEs               ; 15 LEs                 ; Yes        ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[3]                                                                                                     ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 56 LEs               ; 32 LEs                 ; Yes        ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]                                                                                              ;
-; 28:1               ; 4 bits    ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; Yes        ; |final_project|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]                                                                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -522,23 +514,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+---------------------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registrador:reg"                                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "ram_2_write:ram_2"                                                                     ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                             ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 ; address ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data    ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; q       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ram_1_read:ram_1"                                                                   ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------+
+; Port Connectivity Checks: "ram_1_read:ram_1" ;
++---------+-------+----------+-----------------+
+; Port    ; Type  ; Severity ; Details         ;
++---------+-------+----------+-----------------+
+; address ; Input ; Info     ; Stuck at GND    ;
++---------+-------+----------+-----------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -551,14 +553,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------------+-------+-------+------------+----------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Elapsed Time Per Partition      ;
-+------------------+--------------+
-; Partition Name   ; Elapsed Time ;
-+------------------+--------------+
-; Top              ; 00:00:00     ;
-; sld_hub:auto_hub ; 00:00:00     ;
-+------------------+--------------+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -567,7 +568,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Mar 29 10:07:59 2017
+    Info: Processing started: Wed Mar 29 23:03:43 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final_project -c final_project
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file final_project.vhd
@@ -579,18 +580,20 @@ Info (12021): Found 2 design units, including 1 entities, in source file ram_1_r
 Info (12021): Found 2 design units, including 1 entities, in source file ram_2_write.vhd
     Info (12022): Found design unit 1: ram_2_write-SYN
     Info (12023): Found entity 1: ram_2_write
+Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
+    Info (12022): Found design unit 1: registrador-registro
+    Info (12023): Found entity 1: registrador
 Info (12127): Elaborating entity "final_project" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at final_project.vhd(19): used implicit default value for signal "q" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at final_project.vhd(26): used implicit default value for signal "address_1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at final_project.vhd(27): used implicit default value for signal "clock_1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at final_project.vhd(27): used implicit default value for signal "clock_2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at final_project.vhd(28): used implicit default value for signal "data_1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at final_project.vhd(28): used implicit default value for signal "data_2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at final_project.vhd(29): used implicit default value for signal "wren_1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at final_project.vhd(29): used implicit default value for signal "wren_2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at final_project.vhd(30): object "q_1" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at final_project.vhd(30): object "q_2" assigned a value but never read
+Warning (10541): VHDL Signal Declaration warning at final_project.vhd(27): used implicit default value for signal "data_1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at final_project.vhd(28): used implicit default value for signal "wren_1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at final_project.vhd(28): used implicit default value for signal "wren_2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at final_project.vhd(29): object "q_2" assigned a value but never read
+Warning (10541): VHDL Signal Declaration warning at final_project.vhd(30): used implicit default value for signal "enable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at final_project.vhd(30): used implicit default value for signal "reset" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at final_project.vhd(30): used implicit default value for signal "set" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10873): Using initial value X (don't care) for net "address_1" at final_project.vhd(26)
 Warning (10873): Using initial value X (don't care) for net "address_2" at final_project.vhd(26)
+Warning (10873): Using initial value X (don't care) for net "data_2" at final_project.vhd(27)
 Info (12128): Elaborating entity "ram_1_read" for hierarchy "ram_1_read:ram_1"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram_1_read:ram_1|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "ram_1_read:ram_1|altsyncram:altsyncram_component"
@@ -661,6 +664,7 @@ Info (12133): Instantiated megafunction "ram_2_write:ram_2|altsyncram:altsyncram
     Info (12134): Parameter "SHIFT_COUNT_BITS" = "4"
     Info (12134): Parameter "WIDTH_WORD" = "8"
     Info (12134): Parameter "WIDTHAD" = "11"
+Info (12128): Elaborating entity "registrador" for hierarchy "registrador:reg"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "q[0]" is stuck at GND
     Warning (13410): Pin "q[1]" is stuck at GND
@@ -670,30 +674,9 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "q[5]" is stuck at GND
     Warning (13410): Pin "q[6]" is stuck at GND
     Warning (13410): Pin "q[7]" is stuck at GND
-Info (13000): Registers with preset signals will power-up high
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "sld_hub:auto_hub|receive[0][0]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (15400): WYSIWYG primitive "ram_1_read:ram_1|altsyncram:altsyncram_component|altsyncram_03f1:auto_generated|altsyncram_tna2:altsyncram1|ram_block3a0" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|altsyncram_jc82:altsyncram1|ram_block3a0" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_1_read:ram_1|altsyncram:altsyncram_component|altsyncram_03f1:auto_generated|altsyncram_tna2:altsyncram1|ram_block3a1" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|altsyncram_jc82:altsyncram1|ram_block3a1" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_1_read:ram_1|altsyncram:altsyncram_component|altsyncram_03f1:auto_generated|altsyncram_tna2:altsyncram1|ram_block3a2" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|altsyncram_jc82:altsyncram1|ram_block3a2" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_1_read:ram_1|altsyncram:altsyncram_component|altsyncram_03f1:auto_generated|altsyncram_tna2:altsyncram1|ram_block3a3" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|altsyncram_jc82:altsyncram1|ram_block3a3" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_1_read:ram_1|altsyncram:altsyncram_component|altsyncram_03f1:auto_generated|altsyncram_tna2:altsyncram1|ram_block3a4" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|altsyncram_jc82:altsyncram1|ram_block3a4" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_1_read:ram_1|altsyncram:altsyncram_component|altsyncram_03f1:auto_generated|altsyncram_tna2:altsyncram1|ram_block3a5" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|altsyncram_jc82:altsyncram1|ram_block3a5" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_1_read:ram_1|altsyncram:altsyncram_component|altsyncram_03f1:auto_generated|altsyncram_tna2:altsyncram1|ram_block3a6" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|altsyncram_jc82:altsyncram1|ram_block3a6" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_1_read:ram_1|altsyncram:altsyncram_component|altsyncram_03f1:auto_generated|altsyncram_tna2:altsyncram1|ram_block3a7" has a port clk0 that is stuck at GND
-Warning (15400): WYSIWYG primitive "ram_2_write:ram_2|altsyncram:altsyncram_component|altsyncram_nnc1:auto_generated|altsyncram_jc82:altsyncram1|ram_block3a7" has a port clk0 that is stuck at GND
-Warning (21074): Design contains 21 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clock"
+Warning (21074): Design contains 20 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "address[0]"
     Warning (15610): No output dependent on input pin "address[1]"
     Warning (15610): No output dependent on input pin "address[2]"
@@ -714,14 +697,14 @@ Warning (21074): Design contains 21 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "data[6]"
     Warning (15610): No output dependent on input pin "data[7]"
     Warning (15610): No output dependent on input pin "wren"
-Info (21057): Implemented 370 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 368 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 24 input pins
     Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 320 logic cells
+    Info (21061): Implemented 318 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 61 warnings
-    Info: Peak virtual memory: 543 megabytes
-    Info: Processing ended: Wed Mar 29 10:08:04 2017
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 550 megabytes
+    Info: Processing ended: Wed Mar 29 23:03:48 2017
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:04
 

@@ -12,7 +12,7 @@ entity final_project is
 	
 	port
 	(
-		clock		: in 	std_logic  := '1';
+		clock		: in 	std_logic;
 		address	: in 	std_logic_vector (10 downto 0);
 		data		: in 	std_logic_vector (7 downto 0);
 		wren		: in 	std_logic ;
@@ -22,13 +22,17 @@ entity final_project is
 end final_project;
 
 architecture behavior of final_project is
-signal data_out : std_logic_vector (DATA_WIDTH-1 downto 0);
+--sinais
 signal address_1, address_2: std_logic_vector (10 downto 0);
-signal clock_1, clock_2 : std_logic;
-signal data_1, data_2 : std_logic_vector (7 downto 0);
+signal data_1, data_2: std_logic_vector (7 downto 0);
 signal wren_1, wren_2 : std_logic;
 signal q_1, q_2 : std_logic_vector (7 downto 0);
+signal enable,reset,set : std_logic;
+signal d : std_logic_vector (7 downto 0);
+signal q_3 : std_logic_vector (7 downto 0);
+------------------------------------------------------------
 
+-- componentes
 component ram_1_read
 	port
 	(
@@ -51,37 +55,44 @@ component ram_2_write
 	);
 end component;
 
+component registrador
+	port ( 
+		clk,enable,reset,set : std_logic;
+		d : in std_logic_vector (7 downto 0);
+		q : out std_logic_vector (7 downto 0)
+  );
+end component;
 
-
--- Passos:
--- 1 - ler um por um os dados da memoria 1
--- 2 - aplicar algum "filtro" (ex: +2 no dado contido no endereço 10)
--- 3 - escrever na memoria 2
+------------------------------------------------------------------------------
 begin
-ram_1: ram_1_read  port map(address_1, clock_1, data_1, wren_1, q_1);
-ram_2: ram_2_write port map (address_2, clock_2, data_2, wren_2, q_2);
+ram_1	: ram_1_read  port map(address_1, clock, data_1, wren_1, q_1);
+ram_2	: ram_2_write port map (address_2, clock, data_2, wren_2, q_2);
+reg	: registrador port map (clock, enable, reset, set, d, q_3);
 
- -- Memory Read Block
- -- Read Operation : When we = 0
-MEM_READ:
-	process (clock_1) begin
- 		if (rising_edge(clock_1)) then
- 			if (wren_1 = '0') then
- 				data_out <= address_1 + 2;
- 			end if;
- 		end if;
- end process;
- 
--- Memory Write Block
--- Write Operation : When we = 1, cs = 1
-MEM_WRITE:
-	process (clock_2) begin
- 		if (rising_edge(clock_2)) then
- 			if (wren_2 = '1') then
- 				address_2 <= data_out;
- 			end if;
- 		end if;
- 	end process;
- 
-
+  process(clock,reset,set)
+    variable contador: integer range 0 to 2048;
+	 begin  
+		contador:= 0;
+		if (clock'EVENT and clock = '1') then
+				d <= q_1; --dado da ram passa para a entrada do registrador
+				
+				address_1 <= address_1 + contador; --endereço = 0 o endereço vai receber o ende atual + o contador
+				-- por ex se o endereço for 0 e contador 0 endereço = 0
+				-- se endereço = 0 e contador = 1, endereço = 1 e assim por diante
+				
+				contador := contador + 1; --incrementa o contador
+				if (enable = '1') then
+					-- passa o dado da entrada do reg para a saida do reg
+					q_3 <= d;
+				end if;
+				if(wren_2 = '1') then
+					data_2 <= q_3;
+					address_2 <= address_2 + contador;
+					contador := contador + 1 ; --incrementa o contador
+				end if;
+      end if;
+    end process;
+	 
+	 --temos q colocar a saida aqui
+	 q <= data_2;
 end behavior;

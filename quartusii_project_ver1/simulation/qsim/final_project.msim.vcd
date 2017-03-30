@@ -1,0 +1,1814 @@
+$comment
+	File created using the following command:
+		vcd file final_project.msim.vcd -direction
+$end
+$date
+	Thu Mar 30 06:26:18 2017
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module final_project_vlg_vec_tst $end
+$var reg 11 ! address [10:0] $end
+$var reg 1 " clock $end
+$var reg 8 # data [7:0] $end
+$var reg 1 $ wren $end
+$var wire 1 % q [7] $end
+$var wire 1 & q [6] $end
+$var wire 1 ' q [5] $end
+$var wire 1 ( q [4] $end
+$var wire 1 ) q [3] $end
+$var wire 1 * q [2] $end
+$var wire 1 + q [1] $end
+$var wire 1 , q [0] $end
+$var wire 1 - sampler $end
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~8 $end
+$var wire 1 5 ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~7_combout $end
+$var wire 1 6 ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]~10 $end
+$var wire 1 7 ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]~9_combout $end
+$var wire 1 8 ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[2]~14 $end
+$var wire 1 9 ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[2]~13_combout $end
+$var wire 1 : ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~16 $end
+$var wire 1 ; ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~15_combout $end
+$var wire 1 < ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]~17_combout $end
+$var wire 1 = ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~15_combout $end
+$var wire 1 > ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|clear_signal~combout $end
+$var wire 1 ? ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~0_combout $end
+$var wire 1 @ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~1_combout $end
+$var wire 1 A ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~2_combout $end
+$var wire 1 B ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~3_combout $end
+$var wire 1 C ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_incr_addr~0_combout $end
+$var wire 1 D ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]~4_combout $end
+$var wire 1 E ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~2_combout $end
+$var wire 1 F ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~3_combout $end
+$var wire 1 G ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~5_combout $end
+$var wire 1 H ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~6_combout $end
+$var wire 1 I ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~7_combout $end
+$var wire 1 J ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~8_combout $end
+$var wire 1 K ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~9_combout $end
+$var wire 1 L ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]~11_combout $end
+$var wire 1 M ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]~12_combout $end
+$var wire 1 N ram_1|altsyncram_component|auto_generated|mgl_prim2|Equal1~0_combout $end
+$var wire 1 O ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~9_combout $end
+$var wire 1 P ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~6_combout $end
+$var wire 1 Q ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~8_combout $end
+$var wire 1 R ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg[2]~1_combout $end
+$var wire 1 S ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~10_combout $end
+$var wire 1 T ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~11_combout $end
+$var wire 1 U ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~12_combout $end
+$var wire 1 V ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~10_combout $end
+$var wire 1 W ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~11_combout $end
+$var wire 1 X ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~12_combout $end
+$var wire 1 Y ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~13_combout $end
+$var wire 1 Z ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~14_combout $end
+$var wire 1 [ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~15_combout $end
+$var wire 1 \ ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~13_combout $end
+$var wire 1 ] ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~14_combout $end
+$var wire 1 ^ ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~15_combout $end
+$var wire 1 _ ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~5_combout $end
+$var wire 1 ` ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~6_combout $end
+$var wire 1 a ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~7_combout $end
+$var wire 1 b ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~7_combout $end
+$var wire 1 c ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~8_combout $end
+$var wire 1 d ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~8_combout $end
+$var wire 1 e ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]~19_combout $end
+$var wire 1 f auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~12 $end
+$var wire 1 g auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[0]~11_combout $end
+$var wire 1 h auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~14 $end
+$var wire 1 i auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[1]~13_combout $end
+$var wire 1 j auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~17 $end
+$var wire 1 k auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[2]~16_combout $end
+$var wire 1 l auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~19 $end
+$var wire 1 m auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[3]~18_combout $end
+$var wire 1 n auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~20_combout $end
+$var wire 1 o auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~3_combout $end
+$var wire 1 p auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo_bypass_reg~regout $end
+$var wire 1 q auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~4_combout $end
+$var wire 1 r auto_hub|jtag_hub_gen:sld_jtag_hub_inst|Equal11~0_combout $end
+$var wire 1 s auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~5_combout $end
+$var wire 1 t auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]~3_combout $end
+$var wire 1 u auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][1]~regout $end
+$var wire 1 v auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][2]~regout $end
+$var wire 1 w auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][2]~regout $end
+$var wire 1 x auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][4]~regout $end
+$var wire 1 y auto_hub|jtag_hub_gen:sld_jtag_hub_inst|node_ena~2_combout $end
+$var wire 1 z auto_hub|jtag_hub_gen:sld_jtag_hub_inst|node_ena~4_combout $end
+$var wire 1 { auto_hub|jtag_hub_gen:sld_jtag_hub_inst|Equal0~0_combout $end
+$var wire 1 | auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg~0_combout $end
+$var wire 1 } auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[6]~7_combout $end
+$var wire 1 ~ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[6]~8_combout $end
+$var wire 1 !! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[2]~10_combout $end
+$var wire 1 "! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~6_combout $end
+$var wire 1 #! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~7_combout $end
+$var wire 1 $! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|clear_signal~combout $end
+$var wire 1 %! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~8_combout $end
+$var wire 1 &! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo_bypass_reg~0_combout $end
+$var wire 1 '! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[1]~3_combout $end
+$var wire 1 (! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg~3_combout $end
+$var wire 1 )! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg~4_combout $end
+$var wire 1 *! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[4]~13_combout $end
+$var wire 1 +! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg~11_combout $end
+$var wire 1 ,! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg~13_combout $end
+$var wire 1 -! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[2]~5_combout $end
+$var wire 1 .! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|reset_ena_reg~regout $end
+$var wire 1 /! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[2]~6_combout $end
+$var wire 1 0! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~14_combout $end
+$var wire 1 1! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg~1_combout $end
+$var wire 1 2! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~15_combout $end
+$var wire 1 3! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~9_combout $end
+$var wire 1 4! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg~2_combout $end
+$var wire 1 5! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~10_combout $end
+$var wire 1 6! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~11_combout $end
+$var wire 1 7! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~12_combout $end
+$var wire 1 8! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg~3_combout $end
+$var wire 1 9! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~13_combout $end
+$var wire 1 :! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~14_combout $end
+$var wire 1 ;! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~15_combout $end
+$var wire 1 <! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR[0]~16_combout $end
+$var wire 1 =! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~22_combout $end
+$var wire 1 >! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter[4]~23_combout $end
+$var wire 1 ?! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR~17_combout $end
+$var wire 1 @! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~19_combout $end
+$var wire 1 A! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~20_combout $end
+$var wire 1 B! auto_hub|~GND~combout $end
+$var wire 1 C! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|clr_reg~_wirecell_combout $end
+$var wire 1 D! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state[0]~_wirecell_combout $end
+$var wire 1 E! ram_1|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg[2]~feeder_combout $end
+$var wire 1 F! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg[0]~feeder_combout $end
+$var wire 1 G! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg[2]~feeder_combout $end
+$var wire 1 H! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg[3]~feeder_combout $end
+$var wire 1 I! altera_reserved_tms~combout $end
+$var wire 1 J! altera_reserved_tck~combout $end
+$var wire 1 K! altera_reserved_tdi~combout $end
+$var wire 1 L! altera_internal_jtag~TDIUTAP $end
+$var wire 1 M! altera_internal_jtag~TMSUTAP $end
+$var wire 1 N! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt~1_combout $end
+$var wire 1 O! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt~2_combout $end
+$var wire 1 P! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt~0_combout $end
+$var wire 1 Q! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~0_combout $end
+$var wire 1 R! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state[0]~clkctrl_outclk $end
+$var wire 1 S! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~3_combout $end
+$var wire 1 T! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~4_combout $end
+$var wire 1 U! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~5_combout $end
+$var wire 1 V! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~6_combout $end
+$var wire 1 W! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~7_combout $end
+$var wire 1 X! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_proc~0_combout $end
+$var wire 1 Y! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|virtual_ir_dr_scan_proc~0_combout $end
+$var wire 1 Z! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~1_combout $end
+$var wire 1 [! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~2_combout $end
+$var wire 1 \! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|node_ena_proc~0_combout $end
+$var wire 1 ]! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~8_combout $end
+$var wire 1 ^! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~10_combout $end
+$var wire 1 _! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~11_combout $end
+$var wire 1 `! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~12_combout $end
+$var wire 1 a! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state~9_combout $end
+$var wire 1 b! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg[7]~feeder_combout $end
+$var wire 1 c! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg[5]~feeder_combout $end
+$var wire 1 d! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg[4]~feeder_combout $end
+$var wire 1 e! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg[2]~0_combout $end
+$var wire 1 f! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg[1]~feeder_combout $end
+$var wire 1 g! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg[0]~1_combout $end
+$var wire 1 h! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|Equal0~1_combout $end
+$var wire 1 i! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|Equal1~0_combout $end
+$var wire 1 j! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|virtual_ir_scan_reg~regout $end
+$var wire 1 k! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg_ena~0_combout $end
+$var wire 1 l! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[6]~9_combout $end
+$var wire 1 m! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|clr_reg_proc~0_combout $end
+$var wire 1 n! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|clr_reg~regout $end
+$var wire 1 o! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|clr_reg~clkctrl_outclk $end
+$var wire 1 p! ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[0]~11_combout $end
+$var wire 1 q! ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[0]~11_combout $end
+$var wire 1 r! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[1]~8_combout $end
+$var wire 1 s! ram_1|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg[0]~feeder_combout $end
+$var wire 1 t! ram_1|altsyncram_component|auto_generated|mgl_prim2|process_0~0_combout $end
+$var wire 1 u! ram_1|altsyncram_component|auto_generated|mgl_prim2|process_0~0clkctrl_outclk $end
+$var wire 1 v! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]~4_combout $end
+$var wire 1 w! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|node_ena_proc~1_combout $end
+$var wire 1 x! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|node_ena~0_combout $end
+$var wire 1 y! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|node_ena~1_combout $end
+$var wire 1 z! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|node_ena~3_combout $end
+$var wire 1 {! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|node_ena[1]~reg0_regout $end
+$var wire 1 |! ram_1|altsyncram_component|auto_generated|mgl_prim2|process_0~1_combout $end
+$var wire 1 }! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg~16_combout $end
+$var wire 1 ~! auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][0]~11_combout $end
+$var wire 1 !" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]~1_combout $end
+$var wire 1 "" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]~2_combout $end
+$var wire 1 #" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][0]~12_combout $end
+$var wire 1 $" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][4]~regout $end
+$var wire 1 %" ram_2|altsyncram_component|auto_generated|mgl_prim2|process_0~0_combout $end
+$var wire 1 &" ram_2|altsyncram_component|auto_generated|mgl_prim2|process_0~0clkctrl_outclk $end
+$var wire 1 '" ram_2|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg[2]~feeder_combout $end
+$var wire 1 (" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|Equal3~0_combout $end
+$var wire 1 )" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|reset_ena_reg_proc~0_combout $end
+$var wire 1 *" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[0]~7_combout $end
+$var wire 1 +" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[3]~0_combout $end
+$var wire 1 ," auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg~12_combout $end
+$var wire 1 -" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[5]~11_combout $end
+$var wire 1 ." auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[2]~2_combout $end
+$var wire 1 /" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[2]~3_combout $end
+$var wire 1 0" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[2]~4_combout $end
+$var wire 1 1" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg~12_combout $end
+$var wire 1 2" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][1]~8_combout $end
+$var wire 1 3" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][0]~9_combout $end
+$var wire 1 4" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][3]~regout $end
+$var wire 1 5" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg~15_combout $end
+$var wire 1 6" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][3]~regout $end
+$var wire 1 7" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|node_ena~5_combout $end
+$var wire 1 8" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|node_ena[2]~reg0_regout $end
+$var wire 1 9" ram_2|altsyncram_component|auto_generated|mgl_prim2|process_0~1_combout $end
+$var wire 1 :" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg~6_combout $end
+$var wire 1 ;" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[2]~2_combout $end
+$var wire 1 <" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg[1]~4_combout $end
+$var wire 1 =" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg~7_combout $end
+$var wire 1 >" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][0]~regout $end
+$var wire 1 ?" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg~10_combout $end
+$var wire 1 @" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][0]~regout $end
+$var wire 1 A" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][0]~clkctrl_outclk $end
+$var wire 1 B" ram_2|altsyncram_component|auto_generated|mgl_prim2|process_0~5_combout $end
+$var wire 1 C" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg~14_combout $end
+$var wire 1 D" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][2]~regout $end
+$var wire 1 E" ram_2|altsyncram_component|auto_generated|mgl_prim2|process_0~4_combout $end
+$var wire 1 F" ram_2|altsyncram_component|auto_generated|mgl_prim2|process_0~6_combout $end
+$var wire 1 G" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg[1]~0_combout $end
+$var wire 1 H" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][3]~clkctrl_outclk $end
+$var wire 1 I" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg[0]~3_combout $end
+$var wire 1 J" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg[2]~2_combout $end
+$var wire 1 K" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_incr_addr~2_combout $end
+$var wire 1 L" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_incr_addr~1_combout $end
+$var wire 1 M" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[8]~13_combout $end
+$var wire 1 N" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[0]~12 $end
+$var wire 1 O" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[1]~14_combout $end
+$var wire 1 P" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[1]~15 $end
+$var wire 1 Q" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[2]~16_combout $end
+$var wire 1 R" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[2]~17 $end
+$var wire 1 S" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[3]~18_combout $end
+$var wire 1 T" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[3]~19 $end
+$var wire 1 U" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[4]~20_combout $end
+$var wire 1 V" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[4]~21 $end
+$var wire 1 W" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~22_combout $end
+$var wire 1 X" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~23 $end
+$var wire 1 Y" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[6]~24_combout $end
+$var wire 1 Z" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[6]~25 $end
+$var wire 1 [" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~26_combout $end
+$var wire 1 \" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~27 $end
+$var wire 1 ]" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[8]~28_combout $end
+$var wire 1 ^" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[8]~29 $end
+$var wire 1 _" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[9]~30_combout $end
+$var wire 1 `" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[9]~31 $end
+$var wire 1 a" ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[10]~32_combout $end
+$var wire 1 b" ram_2|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg[3]~feeder_combout $end
+$var wire 1 c" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[1]~15 $end
+$var wire 1 d" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[2]~16_combout $end
+$var wire 1 e" ram_1|altsyncram_component|auto_generated|mgl_prim2|process_0~5_combout $end
+$var wire 1 f" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_incr_addr~1_combout $end
+$var wire 1 g" ram_1|altsyncram_component|auto_generated|mgl_prim2|process_0~4_combout $end
+$var wire 1 h" ram_1|altsyncram_component|auto_generated|mgl_prim2|process_0~3_combout $end
+$var wire 1 i" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg[0]~4_combout $end
+$var wire 1 j" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg~5_combout $end
+$var wire 1 k" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][3]~1_combout $end
+$var wire 1 l" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][0]~2_combout $end
+$var wire 1 m" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][3]~regout $end
+$var wire 1 n" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg~8_combout $end
+$var wire 1 o" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]~5_combout $end
+$var wire 1 p" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][3]~regout $end
+$var wire 1 q" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][3]~clkctrl_outclk $end
+$var wire 1 r" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg[1]~0_combout $end
+$var wire 1 s" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg[1]~1_combout $end
+$var wire 1 t" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg~6_combout $end
+$var wire 1 u" auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][1]~regout $end
+$var wire 1 v" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg[2]~2_combout $end
+$var wire 1 w" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg[2]~3_combout $end
+$var wire 1 x" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_incr_addr~2_combout $end
+$var wire 1 y" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[0]~13_combout $end
+$var wire 1 z" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[2]~17 $end
+$var wire 1 {" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[3]~18_combout $end
+$var wire 1 |" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[3]~19 $end
+$var wire 1 }" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[4]~20_combout $end
+$var wire 1 ~" ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[4]~21 $end
+$var wire 1 !# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~22_combout $end
+$var wire 1 "# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~23 $end
+$var wire 1 ## ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[6]~24_combout $end
+$var wire 1 $# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[6]~25 $end
+$var wire 1 %# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~26_combout $end
+$var wire 1 &# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~27 $end
+$var wire 1 '# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[8]~28_combout $end
+$var wire 1 (# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[8]~29 $end
+$var wire 1 )# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[9]~30_combout $end
+$var wire 1 *# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[9]~31 $end
+$var wire 1 +# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[10]~32_combout $end
+$var wire 1 ,# ram_1|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg[3]~feeder_combout $end
+$var wire 1 -# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[4]~14_combout $end
+$var wire 1 .# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[4]~15_combout $end
+$var wire 1 /# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg~6_combout $end
+$var wire 1 0# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][4]~regout $end
+$var wire 1 1# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg~9_combout $end
+$var wire 1 2# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][4]~regout $end
+$var wire 1 3# ram_1|altsyncram_component|auto_generated|mgl_prim2|is_in_use_reg~0_combout $end
+$var wire 1 4# ram_1|altsyncram_component|auto_generated|mgl_prim2|is_in_use_reg~regout $end
+$var wire 1 5# ram_2|altsyncram_component|auto_generated|mgl_prim2|is_in_use_reg~0_combout $end
+$var wire 1 6# ram_2|altsyncram_component|auto_generated|mgl_prim2|is_in_use_reg~regout $end
+$var wire 1 7# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg~1_combout $end
+$var wire 1 8# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg~0_combout $end
+$var wire 1 9# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[1][0]~regout $end
+$var wire 1 :# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg~0_combout $end
+$var wire 1 ;# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]~regout $end
+$var wire 1 <# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][0]~clkctrl_outclk $end
+$var wire 1 =# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[0]~12 $end
+$var wire 1 ># ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[1]~14_combout $end
+$var wire 1 ?# ram_1|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg[1]~feeder_combout $end
+$var wire 1 @# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg~5_combout $end
+$var wire 1 A# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg~7_combout $end
+$var wire 1 B# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[1][2]~regout $end
+$var wire 1 C# ram_1|altsyncram_component|auto_generated|mgl_prim2|enable_write~0_combout $end
+$var wire 1 D# clock~combout $end
+$var wire 1 E# clock~clkctrl_outclk $end
+$var wire 1 F# altera_internal_jtag~TCKUTAP $end
+$var wire 1 G# altera_internal_jtag~TCKUTAPclkctrl_outclk $end
+$var wire 1 H# ~GND~combout $end
+$var wire 1 I# ram_1|altsyncram_component|auto_generated|mgl_prim2|process_0~2_combout $end
+$var wire 1 J# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~6_combout $end
+$var wire 1 K# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[4]~1_combout $end
+$var wire 1 L# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~5_combout $end
+$var wire 1 M# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~4_combout $end
+$var wire 1 N# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~3_combout $end
+$var wire 1 O# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~2_combout $end
+$var wire 1 P# ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~0_combout $end
+$var wire 1 Q# ram_1|altsyncram_component|auto_generated|mgl_prim2|bypass_reg_out~0_combout $end
+$var wire 1 R# ram_1|altsyncram_component|auto_generated|mgl_prim2|bypass_reg_out~regout $end
+$var wire 1 S# ram_1|altsyncram_component|auto_generated|mgl_prim2|tdo~0_combout $end
+$var wire 1 T# ram_1|altsyncram_component|auto_generated|mgl_prim2|tdo~1_combout $end
+$var wire 1 U# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg~10_combout $end
+$var wire 1 V# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_irf_reg[2][1]~regout $end
+$var wire 1 W# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg~13_combout $end
+$var wire 1 X# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irf_reg[2][1]~regout $end
+$var wire 1 Y# ram_2|altsyncram_component|auto_generated|mgl_prim2|bypass_reg_out~0_combout $end
+$var wire 1 Z# ram_2|altsyncram_component|auto_generated|mgl_prim2|bypass_reg_out~regout $end
+$var wire 1 [# ram_2|altsyncram_component|auto_generated|mgl_prim2|process_0~2_combout $end
+$var wire 1 \# ram_2|altsyncram_component|auto_generated|mgl_prim2|enable_write~0_combout $end
+$var wire 1 ]# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~4_combout $end
+$var wire 1 ^# ram_2|altsyncram_component|auto_generated|mgl_prim2|process_0~3_combout $end
+$var wire 1 _# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[3]~1_combout $end
+$var wire 1 `# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~3_combout $end
+$var wire 1 a# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~2_combout $end
+$var wire 1 b# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~0_combout $end
+$var wire 1 c# ram_2|altsyncram_component|auto_generated|mgl_prim2|tdo~0_combout $end
+$var wire 1 d# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|clear_signal~combout $end
+$var wire 1 e# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~0_combout $end
+$var wire 1 f# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~7_combout $end
+$var wire 1 g# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~19_combout $end
+$var wire 1 h# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_incr_addr~0_combout $end
+$var wire 1 i# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~10_combout $end
+$var wire 1 j# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~8 $end
+$var wire 1 k# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]~11_combout $end
+$var wire 1 l# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]~12 $end
+$var wire 1 m# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[2]~13_combout $end
+$var wire 1 n# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[2]~14 $end
+$var wire 1 o# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~16 $end
+$var wire 1 p# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]~17_combout $end
+$var wire 1 q# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~1_combout $end
+$var wire 1 r# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~7_combout $end
+$var wire 1 s# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~9_combout $end
+$var wire 1 t# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]~5_combout $end
+$var wire 1 u# ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~4_combout $end
+$var wire 1 v# ram_2|altsyncram_component|auto_generated|mgl_prim2|tdo~1_combout $end
+$var wire 1 w# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~6_combout $end
+$var wire 1 x# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[0]~8 $end
+$var wire 1 y# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[1]~9_combout $end
+$var wire 1 z# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[1]~10 $end
+$var wire 1 {# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[2]~11_combout $end
+$var wire 1 |# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|Equal0~2_combout $end
+$var wire 1 }# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|virtual_dr_scan_reg~regout $end
+$var wire 1 ~# auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[0]~17_combout $end
+$var wire 1 !$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[0]~18_combout $end
+$var wire 1 "$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[0]~7_combout $end
+$var wire 1 #$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~10_combout $end
+$var wire 1 $$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[2]~12 $end
+$var wire 1 %$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~14 $end
+$var wire 1 &$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]~15_combout $end
+$var wire 1 '$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~11_combout $end
+$var wire 1 ($ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]~12_combout $end
+$var wire 1 )$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]~13_combout $end
+$var wire 1 *$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[0]~0_combout $end
+$var wire 1 +$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg[0]~2_combout $end
+$var wire 1 ,$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg[0]~4_combout $end
+$var wire 1 -$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg[2]~feeder_combout $end
+$var wire 1 .$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg[1]~feeder_combout $end
+$var wire 1 /$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg[0]~3_combout $end
+$var wire 1 0$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg[0]~0_combout $end
+$var wire 1 1$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[1]~1_combout $end
+$var wire 1 2$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[3]~13_combout $end
+$var wire 1 3$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~15_combout $end
+$var wire 1 4$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~16_combout $end
+$var wire 1 5$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[2]~2_combout $end
+$var wire 1 6$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~17_combout $end
+$var wire 1 7$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg~18_combout $end
+$var wire 1 8$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]~3_combout $end
+$var wire 1 9$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_proc~0_combout $end
+$var wire 1 :$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg_ena~combout $end
+$var wire 1 ;$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~0_combout $end
+$var wire 1 <$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~1_combout $end
+$var wire 1 =$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~2_combout $end
+$var wire 1 >$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~7_combout $end
+$var wire 1 ?$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~regout $end
+$var wire 1 @$ auto_hub|jtag_hub_gen:sld_jtag_hub_inst|tdo~_wirecell_combout $end
+$var wire 1 A$ altera_internal_jtag~TDO $end
+$var wire 1 B$ ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR [3] $end
+$var wire 1 C$ ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR [2] $end
+$var wire 1 D$ ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR [1] $end
+$var wire 1 E$ ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR [0] $end
+$var wire 1 F$ ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [4] $end
+$var wire 1 G$ ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [3] $end
+$var wire 1 H$ ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [2] $end
+$var wire 1 I$ ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [1] $end
+$var wire 1 J$ ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [0] $end
+$var wire 1 K$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [7] $end
+$var wire 1 L$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [6] $end
+$var wire 1 M$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [5] $end
+$var wire 1 N$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [4] $end
+$var wire 1 O$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [3] $end
+$var wire 1 P$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [2] $end
+$var wire 1 Q$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [1] $end
+$var wire 1 R$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [0] $end
+$var wire 1 S$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [7] $end
+$var wire 1 T$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [6] $end
+$var wire 1 U$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [5] $end
+$var wire 1 V$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [4] $end
+$var wire 1 W$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [3] $end
+$var wire 1 X$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [2] $end
+$var wire 1 Y$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [1] $end
+$var wire 1 Z$ ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [0] $end
+$var wire 1 [$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg [3] $end
+$var wire 1 \$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg [2] $end
+$var wire 1 ]$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg [1] $end
+$var wire 1 ^$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg [0] $end
+$var wire 1 _$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [7] $end
+$var wire 1 `$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [6] $end
+$var wire 1 a$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [5] $end
+$var wire 1 b$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [4] $end
+$var wire 1 c$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [3] $end
+$var wire 1 d$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [2] $end
+$var wire 1 e$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [1] $end
+$var wire 1 f$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [0] $end
+$var wire 1 g$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [10] $end
+$var wire 1 h$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [9] $end
+$var wire 1 i$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [8] $end
+$var wire 1 j$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [7] $end
+$var wire 1 k$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [6] $end
+$var wire 1 l$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [5] $end
+$var wire 1 m$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [4] $end
+$var wire 1 n$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [3] $end
+$var wire 1 o$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [2] $end
+$var wire 1 p$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [1] $end
+$var wire 1 q$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [0] $end
+$var wire 1 r$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg [3] $end
+$var wire 1 s$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg [2] $end
+$var wire 1 t$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg [1] $end
+$var wire 1 u$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg [0] $end
+$var wire 1 v$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [4] $end
+$var wire 1 w$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [3] $end
+$var wire 1 x$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [2] $end
+$var wire 1 y$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [1] $end
+$var wire 1 z$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [0] $end
+$var wire 1 {$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR [3] $end
+$var wire 1 |$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR [2] $end
+$var wire 1 }$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR [1] $end
+$var wire 1 ~$ ram_1|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR [0] $end
+$var wire 1 !% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [7] $end
+$var wire 1 "% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [6] $end
+$var wire 1 #% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [5] $end
+$var wire 1 $% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [4] $end
+$var wire 1 %% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [3] $end
+$var wire 1 &% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [2] $end
+$var wire 1 '% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [1] $end
+$var wire 1 (% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_b [0] $end
+$var wire 1 )% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [7] $end
+$var wire 1 *% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [6] $end
+$var wire 1 +% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [5] $end
+$var wire 1 ,% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [4] $end
+$var wire 1 -% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [3] $end
+$var wire 1 .% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [2] $end
+$var wire 1 /% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [1] $end
+$var wire 1 0% ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|q_a [0] $end
+$var wire 1 1% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [4] $end
+$var wire 1 2% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [3] $end
+$var wire 1 3% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [2] $end
+$var wire 1 4% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [1] $end
+$var wire 1 5% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg [0] $end
+$var wire 1 6% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg [9] $end
+$var wire 1 7% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg [8] $end
+$var wire 1 8% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg [7] $end
+$var wire 1 9% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg [6] $end
+$var wire 1 :% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg [5] $end
+$var wire 1 ;% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg [4] $end
+$var wire 1 <% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg [3] $end
+$var wire 1 =% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg [2] $end
+$var wire 1 >% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg [1] $end
+$var wire 1 ?% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|jtag_ir_reg [0] $end
+$var wire 1 @% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg [6] $end
+$var wire 1 A% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg [5] $end
+$var wire 1 B% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg [4] $end
+$var wire 1 C% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg [3] $end
+$var wire 1 D% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg [2] $end
+$var wire 1 E% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg [1] $end
+$var wire 1 F% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|irsr_reg [0] $end
+$var wire 1 G% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [3] $end
+$var wire 1 H% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [2] $end
+$var wire 1 I% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [1] $end
+$var wire 1 J% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_update_reg [0] $end
+$var wire 1 K% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg [3] $end
+$var wire 1 L% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg [2] $end
+$var wire 1 M% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg [1] $end
+$var wire 1 N% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|identity_contrib_shift_reg [0] $end
+$var wire 1 O% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg [2] $end
+$var wire 1 P% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg [1] $end
+$var wire 1 Q% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_mode_reg [0] $end
+$var wire 1 R% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg [3] $end
+$var wire 1 S% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg [2] $end
+$var wire 1 T% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg [1] $end
+$var wire 1 U% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg [0] $end
+$var wire 1 V% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg [3] $end
+$var wire 1 W% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg [2] $end
+$var wire 1 X% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg [1] $end
+$var wire 1 Y% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg [0] $end
+$var wire 1 Z% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt [2] $end
+$var wire 1 [% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt [1] $end
+$var wire 1 \% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|tms_cnt [0] $end
+$var wire 1 ]% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [15] $end
+$var wire 1 ^% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [14] $end
+$var wire 1 _% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [13] $end
+$var wire 1 `% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [12] $end
+$var wire 1 a% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [11] $end
+$var wire 1 b% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [10] $end
+$var wire 1 c% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [9] $end
+$var wire 1 d% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [8] $end
+$var wire 1 e% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [7] $end
+$var wire 1 f% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [6] $end
+$var wire 1 g% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [5] $end
+$var wire 1 h% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [4] $end
+$var wire 1 i% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [3] $end
+$var wire 1 j% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [2] $end
+$var wire 1 k% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [1] $end
+$var wire 1 l% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|shadow_jsm|state [0] $end
+$var wire 1 m% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [4] $end
+$var wire 1 n% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [3] $end
+$var wire 1 o% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [2] $end
+$var wire 1 p% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [1] $end
+$var wire 1 q% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|word_counter [0] $end
+$var wire 1 r% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR [3] $end
+$var wire 1 s% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR [2] $end
+$var wire 1 t% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR [1] $end
+$var wire 1 u% auto_hub|jtag_hub_gen:sld_jtag_hub_inst|hub_info_reg|WORD_SR [0] $end
+$var wire 1 v% ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [10] $end
+$var wire 1 w% ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [9] $end
+$var wire 1 x% ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [8] $end
+$var wire 1 y% ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [7] $end
+$var wire 1 z% ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [6] $end
+$var wire 1 {% ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [5] $end
+$var wire 1 |% ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [4] $end
+$var wire 1 }% ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [3] $end
+$var wire 1 ~% ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [2] $end
+$var wire 1 !& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [1] $end
+$var wire 1 "& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [0] $end
+$var wire 1 #& ram_2|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg [3] $end
+$var wire 1 $& ram_2|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg [2] $end
+$var wire 1 %& ram_2|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg [1] $end
+$var wire 1 && ram_2|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg [0] $end
+$var wire 1 '& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [7] $end
+$var wire 1 (& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [6] $end
+$var wire 1 )& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [5] $end
+$var wire 1 *& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [4] $end
+$var wire 1 +& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [3] $end
+$var wire 1 ,& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [2] $end
+$var wire 1 -& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [1] $end
+$var wire 1 .& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [0] $end
+$var wire 1 /& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg [3] $end
+$var wire 1 0& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg [2] $end
+$var wire 1 1& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg [1] $end
+$var wire 1 2& ram_2|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg [0] $end
+$var wire 1 3& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a0_PORTADATAOUT_bus [0] $end
+$var wire 1 4& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a0_PORTBDATAOUT_bus [0] $end
+$var wire 1 5& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a0_PORTADATAOUT_bus [0] $end
+$var wire 1 6& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a0_PORTBDATAOUT_bus [0] $end
+$var wire 1 7& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a1_PORTADATAOUT_bus [0] $end
+$var wire 1 8& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a1_PORTBDATAOUT_bus [0] $end
+$var wire 1 9& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a1_PORTADATAOUT_bus [0] $end
+$var wire 1 :& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a1_PORTBDATAOUT_bus [0] $end
+$var wire 1 ;& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a2_PORTADATAOUT_bus [0] $end
+$var wire 1 <& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a2_PORTBDATAOUT_bus [0] $end
+$var wire 1 =& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a2_PORTADATAOUT_bus [0] $end
+$var wire 1 >& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a2_PORTBDATAOUT_bus [0] $end
+$var wire 1 ?& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a3_PORTADATAOUT_bus [0] $end
+$var wire 1 @& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a3_PORTBDATAOUT_bus [0] $end
+$var wire 1 A& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a3_PORTADATAOUT_bus [0] $end
+$var wire 1 B& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a3_PORTBDATAOUT_bus [0] $end
+$var wire 1 C& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a4_PORTADATAOUT_bus [0] $end
+$var wire 1 D& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a4_PORTBDATAOUT_bus [0] $end
+$var wire 1 E& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a4_PORTADATAOUT_bus [0] $end
+$var wire 1 F& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a4_PORTBDATAOUT_bus [0] $end
+$var wire 1 G& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a5_PORTADATAOUT_bus [0] $end
+$var wire 1 H& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a5_PORTBDATAOUT_bus [0] $end
+$var wire 1 I& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a5_PORTADATAOUT_bus [0] $end
+$var wire 1 J& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a5_PORTBDATAOUT_bus [0] $end
+$var wire 1 K& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a6_PORTADATAOUT_bus [0] $end
+$var wire 1 L& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a6_PORTBDATAOUT_bus [0] $end
+$var wire 1 M& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a6_PORTADATAOUT_bus [0] $end
+$var wire 1 N& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a6_PORTBDATAOUT_bus [0] $end
+$var wire 1 O& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a7_PORTADATAOUT_bus [0] $end
+$var wire 1 P& ram_1|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a7_PORTBDATAOUT_bus [0] $end
+$var wire 1 Q& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a7_PORTADATAOUT_bus [0] $end
+$var wire 1 R& ram_2|altsyncram_component|auto_generated|altsyncram1|altsyncram3|ram_block4a7_PORTBDATAOUT_bus [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0"
+b0 #
+0$
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+x-
+0.
+1/
+x0
+11
+12
+13
+04
+15
+16
+07
+08
+09
+1:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+1H
+0I
+1J
+1K
+1L
+0M
+0N
+1O
+0P
+1Q
+0R
+0S
+1T
+1U
+1V
+1W
+1X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+xc
+xd
+0e
+0f
+1g
+1h
+0i
+0j
+0k
+1l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+1z
+1{
+0|
+0}
+0~
+0!!
+1"!
+1#!
+0$!
+1%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+1-!
+0.!
+0/!
+10!
+01!
+12!
+03!
+04!
+15!
+16!
+17!
+x8!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+1@!
+1A!
+0B!
+1C!
+1D!
+0E!
+0F!
+0G!
+0H!
+zI!
+zJ!
+zK!
+zL!
+zM!
+xN!
+0O!
+0P!
+xQ!
+0R!
+0S!
+0T!
+0U!
+0V!
+0W!
+0X!
+0Y!
+1Z!
+0[!
+0\!
+0]!
+0^!
+0_!
+0`!
+0a!
+0b!
+0c!
+0d!
+1e!
+0f!
+1g!
+0h!
+0i!
+0j!
+0k!
+0l!
+0m!
+0n!
+0o!
+1p!
+1q!
+0r!
+0s!
+0t!
+0u!
+0v!
+0w!
+1x!
+0y!
+0z!
+0{!
+0|!
+0}!
+0~!
+0!"
+0""
+0#"
+0$"
+0%"
+0&"
+0'"
+0("
+0)"
+0*"
+0+"
+0,"
+0-"
+0."
+0/"
+00"
+01"
+12"
+03"
+04"
+05"
+06"
+07"
+08"
+09"
+0:"
+0;"
+0<"
+0="
+0>"
+0?"
+0@"
+0A"
+0B"
+0C"
+0D"
+0E"
+1F"
+0G"
+0H"
+0I"
+0J"
+0K"
+0L"
+0M"
+0N"
+0O"
+1P"
+0Q"
+0R"
+0S"
+1T"
+0U"
+0V"
+0W"
+1X"
+0Y"
+0Z"
+0["
+1\"
+0]"
+0^"
+0_"
+1`"
+0a"
+0b"
+1c"
+0d"
+0e"
+0f"
+0g"
+1h"
+0i"
+0j"
+1k"
+0l"
+0m"
+0n"
+0o"
+0p"
+0q"
+1r"
+0s"
+0t"
+0u"
+0v"
+0w"
+0x"
+0y"
+0z"
+0{"
+1|"
+0}"
+0~"
+0!#
+1"#
+0##
+0$#
+0%#
+1&#
+0'#
+0(#
+0)#
+1*#
+0+#
+0,#
+0-#
+0.#
+0/#
+00#
+01#
+02#
+03#
+04#
+05#
+06#
+07#
+08#
+09#
+0:#
+0;#
+0<#
+0=#
+0>#
+0?#
+0@#
+0A#
+0B#
+0C#
+0D#
+0E#
+zF#
+xG#
+0H#
+0I#
+0J#
+0K#
+0L#
+0M#
+0N#
+0O#
+0P#
+0Q#
+0R#
+0S#
+0T#
+0U#
+0V#
+0W#
+0X#
+0Y#
+0Z#
+0[#
+0\#
+0]#
+1^#
+0_#
+0`#
+0a#
+0b#
+0c#
+0d#
+1e#
+1f#
+0g#
+0h#
+0i#
+0j#
+0k#
+1l#
+0m#
+0n#
+1o#
+0p#
+0q#
+0r#
+1s#
+0t#
+0u#
+0v#
+0w#
+0x#
+1y#
+1z#
+1{#
+0|#
+0}#
+0~#
+1!$
+1"$
+0#$
+0$$
+1%$
+1&$
+0'$
+0($
+0)$
+0*$
+0+$
+0,$
+0-$
+0.$
+0/$
+00$
+11$
+12$
+13$
+14$
+15$
+16$
+17$
+18$
+19$
+0:$
+0;$
+0<$
+0=$
+1>$
+0?$
+1@$
+zA$
+0E$
+0D$
+0C$
+0B$
+0J$
+0I$
+0H$
+0G$
+0F$
+0R$
+0Q$
+0P$
+0O$
+0N$
+0M$
+0L$
+0K$
+0Z$
+0Y$
+0X$
+0W$
+0V$
+0U$
+0T$
+0S$
+0^$
+0]$
+0\$
+z[$
+0f$
+0e$
+0d$
+0c$
+0b$
+0a$
+0`$
+0_$
+0q$
+0p$
+0o$
+0n$
+0m$
+0l$
+0k$
+0j$
+0i$
+0h$
+0g$
+0u$
+0t$
+0s$
+0r$
+0z$
+0y$
+0x$
+0w$
+0v$
+0~$
+0}$
+0|$
+0{$
+0(%
+0'%
+0&%
+0%%
+0$%
+0#%
+0"%
+0!%
+00%
+0/%
+0.%
+0-%
+0,%
+0+%
+0*%
+0)%
+05%
+04%
+03%
+02%
+01%
+0?%
+0>%
+0=%
+0<%
+0;%
+0:%
+09%
+08%
+07%
+06%
+0F%
+0E%
+0D%
+0C%
+0B%
+0A%
+0@%
+0J%
+0I%
+0H%
+0G%
+0N%
+0M%
+0L%
+0K%
+0Q%
+0P%
+0O%
+0U%
+0T%
+0S%
+0R%
+0Y%
+0X%
+0W%
+0V%
+0\%
+0[%
+0Z%
+0l%
+0k%
+0j%
+0i%
+0h%
+0g%
+0f%
+0e%
+0d%
+0c%
+0b%
+0a%
+0`%
+0_%
+0^%
+0]%
+0q%
+0p%
+0o%
+0n%
+0m%
+0u%
+0t%
+0s%
+0r%
+0"&
+0!&
+0~%
+0}%
+0|%
+0{%
+0z%
+0y%
+0x%
+0w%
+0v%
+0&&
+0%&
+0$&
+0#&
+0.&
+0-&
+0,&
+0+&
+0*&
+0)&
+0(&
+0'&
+02&
+01&
+00&
+z/&
+03&
+04&
+05&
+06&
+07&
+08&
+09&
+0:&
+0;&
+0<&
+0=&
+0>&
+0?&
+0@&
+0A&
+0B&
+0C&
+0D&
+0E&
+0F&
+0G&
+0H&
+0I&
+0J&
+0K&
+0L&
+0M&
+0N&
+0O&
+0P&
+0Q&
+0R&
+$end
+#10000
+1$
+0-
+#15000
+1"
+1D#
+1E#
+1-
+#15001
+1O&
+1S$
+#20000
+0$
+0-
+#30000
+0"
+1$
+0D#
+0E#
+1-
+#40000
+0$
+0-
+#45000
+1"
+1D#
+1E#
+1-
+#50000
+1$
+0-
+#60000
+0"
+0$
+0D#
+0E#
+1-
+#70000
+1$
+0-
+#75000
+1"
+1D#
+1E#
+1-
+#80000
+0$
+0-
+#90000
+0"
+1$
+0D#
+0E#
+1-
+#100000
+0$
+0-
+#105000
+1"
+1D#
+1E#
+1-
+#110000
+1$
+0-
+#120000
+0"
+0$
+0D#
+0E#
+1-
+#130000
+1$
+0-
+#135000
+1"
+1D#
+1E#
+1-
+#140000
+0$
+0-
+#150000
+0"
+1$
+0D#
+0E#
+1-
+#160000
+0$
+0-
+#165000
+1"
+1D#
+1E#
+1-
+#170000
+1$
+0-
+#180000
+0"
+0$
+0D#
+0E#
+1-
+#190000
+1$
+0-
+#195000
+1"
+1D#
+1E#
+1-
+#200000
+0$
+0-
+#210000
+0"
+1$
+0D#
+0E#
+1-
+#220000
+0$
+0-
+#225000
+1"
+1D#
+1E#
+1-
+#230000
+1$
+0-
+#240000
+0"
+0$
+0D#
+0E#
+1-
+#250000
+1$
+0-
+#255000
+1"
+1D#
+1E#
+1-
+#260000
+0$
+0-
+#270000
+0"
+1$
+0D#
+0E#
+1-
+#280000
+0$
+0-
+#285000
+1"
+1D#
+1E#
+1-
+#290000
+1$
+0-
+#300000
+0"
+0$
+0D#
+0E#
+1-
+#310000
+1$
+0-
+#315000
+1"
+1D#
+1E#
+1-
+#320000
+0$
+0-
+#330000
+0"
+1$
+0D#
+0E#
+1-
+#340000
+0$
+0-
+#345000
+1"
+1D#
+1E#
+1-
+#350000
+1$
+0-
+#360000
+0"
+0$
+0D#
+0E#
+1-
+#370000
+1$
+0-
+#375000
+1"
+1D#
+1E#
+1-
+#380000
+0$
+0-
+#390000
+0"
+1$
+0D#
+0E#
+1-
+#400000
+0$
+0-
+#405000
+1"
+1D#
+1E#
+1-
+#410000
+1$
+0-
+#420000
+0"
+0$
+0D#
+0E#
+1-
+#430000
+1$
+0-
+#435000
+1"
+1D#
+1E#
+1-
+#440000
+0$
+0-
+#450000
+0"
+1$
+0D#
+0E#
+1-
+#460000
+0$
+0-
+#465000
+1"
+1D#
+1E#
+1-
+#470000
+1$
+0-
+#480000
+0"
+0$
+0D#
+0E#
+1-
+#490000
+1$
+0-
+#495000
+1"
+1D#
+1E#
+1-
+#500000
+0$
+0-
+#510000
+0"
+1$
+0D#
+0E#
+1-
+#520000
+0$
+0-
+#525000
+1"
+1D#
+1E#
+1-
+#530000
+1$
+0-
+#540000
+0"
+0$
+0D#
+0E#
+1-
+#550000
+1$
+0-
+#555000
+1"
+1D#
+1E#
+1-
+#560000
+0$
+0-
+#570000
+0"
+1$
+0D#
+0E#
+1-
+#580000
+0$
+0-
+#585000
+1"
+1D#
+1E#
+1-
+#590000
+1$
+0-
+#600000
+0"
+0$
+0D#
+0E#
+1-
+#610000
+1$
+0-
+#615000
+1"
+1D#
+1E#
+1-
+#620000
+0$
+0-
+#630000
+0"
+1$
+0D#
+0E#
+1-
+#640000
+0$
+0-
+#645000
+1"
+1D#
+1E#
+1-
+#650000
+1$
+0-
+#660000
+0"
+0$
+0D#
+0E#
+1-
+#670000
+1$
+0-
+#675000
+1"
+1D#
+1E#
+1-
+#680000
+0$
+0-
+#690000
+0"
+1$
+0D#
+0E#
+1-
+#700000
+0$
+0-
+#705000
+1"
+1D#
+1E#
+1-
+#710000
+1$
+0-
+#720000
+0"
+0$
+0D#
+0E#
+1-
+#730000
+1$
+0-
+#735000
+1"
+1D#
+1E#
+1-
+#740000
+0$
+0-
+#750000
+0"
+1$
+0D#
+0E#
+1-
+#760000
+0$
+0-
+#765000
+1"
+1D#
+1E#
+1-
+#770000
+1$
+0-
+#780000
+0"
+0$
+0D#
+0E#
+1-
+#790000
+1$
+0-
+#795000
+1"
+1D#
+1E#
+1-
+#800000
+0$
+0-
+#810000
+0"
+1$
+0D#
+0E#
+1-
+#820000
+0$
+0-
+#825000
+1"
+1D#
+1E#
+1-
+#830000
+1$
+0-
+#840000
+0"
+0$
+0D#
+0E#
+1-
+#850000
+1$
+0-
+#855000
+1"
+1D#
+1E#
+1-
+#860000
+0$
+0-
+#870000
+0"
+1$
+0D#
+0E#
+1-
+#880000
+0$
+0-
+#885000
+1"
+1D#
+1E#
+1-
+#890000
+1$
+0-
+#900000
+0"
+0$
+0D#
+0E#
+1-
+#910000
+1$
+0-
+#915000
+1"
+1D#
+1E#
+1-
+#920000
+0$
+0-
+#930000
+0"
+1$
+0D#
+0E#
+1-
+#940000
+0$
+0-
+#945000
+1"
+1D#
+1E#
+1-
+#950000
+1$
+0-
+#960000
+0"
+0$
+0D#
+0E#
+1-
+#970000
+1$
+0-
+#975000
+1"
+1D#
+1E#
+1-
+#980000
+0$
+0-
+#990000
+0"
+1$
+0D#
+0E#
+1-
+#1000000

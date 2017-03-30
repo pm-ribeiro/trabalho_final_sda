@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Biblioteca\Documentos\GitHub\trabalho_final_sda\quartusii_project\simulation\qsim
+vfinal_project
+Z1 !s100 zI>89fE`NTDU8o9:mXTP[1
+Z2 IQBWN4<HR?@?@fC@JPTIP@3
+Z3 VJGGcYm;eDi03SkiW`icHi3
+Z4 dD:\Biblioteca\Documentos\GitHub\trabalho_final_sda\quartusii_project\simulation\qsim
+Z5 w1490865976
+Z6 8final_project.vo
+Z7 Ffinal_project.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|final_project.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1490865977.488000
+Z12 !s107 final_project.vo|
+!s101 -O0
+vfinal_project_vlg_check_tst
+!i10b 1
+Z13 !s100 in0^14>:]1d]>iof9>[dC1
+Z14 I3:oc6Ig1e8OS`2eeXk>jC1
+Z15 V6O[Ki>U@goJQjL_:]TW9V3
+R4
+Z16 w1490865975
+Z17 8final_project.vt
+Z18 Ffinal_project.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z19 !s108 1490865977.811000
+Z20 !s107 final_project.vt|
+Z21 !s90 -work|work|final_project.vt|
+!s101 -O0
+R10
+vfinal_project_vlg_sample_tst
+!i10b 1
+Z22 !s100 2:O^4XkhfCBlGfc1Z6WEV3
+Z23 IOo7BniAA<m5^J1e[];Od70
+Z24 VC8g>DX:6>GP0QdcN5FP>J1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vfinal_project_vlg_vec_tst
+!i10b 1
+!s100 MIJHmaLeXF<i][2NS;K[C1
+I=dzNJS;@4Alf^<AiF0LHj3
+Z25 VcNE;Y;fNB<kTSAhe2Dm]S3
+R4
+R16
+R17
+R18
+Z26 L0 283
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Bruno Gonçalves\Documents\SDA\trabalho_final_sda\quartusii_project\simulation\qsim
+vfinal_project
+Z1 ISfZPnZNM0UHdIR7SQz5VA0
+Z2 Vm7e?9F8eL;cD]UX[OYmoi2
+Z3 dC:\Users\patri\Desktop\trabalho_final_sda\trabalho_final_sda\quartusii_project\simulation\qsim
+Z4 w1490866185
+Z5 8final_project.vo
+Z6 Ffinal_project.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|final_project.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 Zf7ZLP<Bd_e1>h23;D8I<0
+!s85 0
+Z11 !s108 1490866186.087000
+Z12 !s107 final_project.vo|
+!s101 -O0
+vfinal_project_vlg_check_tst
+!i10b 1
+Z13 !s100 TH@mahnBM10N3>dnFTZd_1
+Z14 I[^nF2zRKDO70SC<W`nJ>32
+Z15 V>^K_Y`EIJ>fG[noC>ZFD62
+R3
+Z16 w1490866184
+Z17 8final_project.vt
+Z18 Ffinal_project.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z19 !s108 1490866186.520000
+Z20 !s107 final_project.vt|
+Z21 !s90 -work|work|final_project.vt|
+!s101 -O0
+R9
+vfinal_project_vlg_sample_tst
+!i10b 1
+Z22 !s100 C_PHz5<mCKc74XQ^1ao9J3
+Z23 Ikf;3_Nh<hd3z?mce8`QeK2
+Z24 VW6ePY=RhEo21G?GkogKz73
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vfinal_project_vlg_vec_tst
+!i10b 1
+Z25 !s100 a^8MRCEeNDhO6Ka`o4jGC0
+Z26 Iam?Tm3EoJB791HGBdkoOm0
+Z27 VcNE;Y;fNB<kTSAhe2Dm]S3
+R3
+R16
+R17
+R18
+Z28 L0 641
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9

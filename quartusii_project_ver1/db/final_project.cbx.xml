@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="final_project">
+		<CBX_INST_ENTRY INSTANCE_NAME="|final_project|ram_1_read:ram_1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ggi1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|final_project|ram_2_write:ram_2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_75g1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -14,12 +14,13 @@ end registrador;
 
 architecture registro of registrador is
 
+
 begin
   
   process(clk,reset,set)
     
     begin
-      
+     
       if (reset='1') then q <= (others => '0'); --qnd reset = 1 coloca zero na saida
       elsif (set='1') then q <= (others => '1'); --qnd set = 1 coloca 1 na saida
       elsif (clk'EVENT and clk = '1') then --qnd clock for 1
